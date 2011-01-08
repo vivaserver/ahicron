@@ -2,9 +2,24 @@
 
 one:
   name: Linux
+  weight: <%= rand(50)+5 %>
 
 two:
   name: Mac OS X
+  weight: <%= rand(50)+5 %>
 
 three:
   name: Windows
+  weight: <%= rand(50)+5 %>
+
+four:
+  name: BeOS
+  weight: <%= rand(50)+5 %>
+
+five:
+  name: iOS
+  weight: <%= rand(50)+5 %>
+
+six:
+  name: Android
+  weight: <%= rand(50)+5 %>

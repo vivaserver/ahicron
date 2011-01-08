@@ -24,6 +24,8 @@
           = yield
           #footer
             .block
-              <p>Copyright &copy; #{ Time.now.year } Cristian R. Arroyo.</p>
+              %p 
+                Copyright &copy; #{ Time.now.year } Cristian R. Arroyo.
+                = link_to 'VivaServer', 'http://www.vivaserver.com.ar'
         #sidebar
           = yield :sidebar
