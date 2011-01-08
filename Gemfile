@@ -4,4 +4,5 @@ source :gemcutter
 gem 'haml', '3.0.24'
 gem 'rails', '2.3.9'
 gem 'repeated_auto_complete'
+gem 'web-app-theme', '0.5.3'
 gem "sqlite3-ruby", :require => "sqlite3"
