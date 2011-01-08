@@ -1,7 +1,10 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
+  name: Linux
 
 two:
-  name: MyString
+  name: Mac OS X
+
+three:
+  name: Windows

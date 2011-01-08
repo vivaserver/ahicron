@@ -16,6 +16,7 @@ Rails::Initializer.run do |config|
 
   # Specify gems that this application depends on and have them installed with rake gems:install
   config.gem "haml"
+  config.gem "inherited_resources"
   config.gem "repeated_auto_complete"
   config.gem "sqlite3-ruby", :lib => "sqlite3"
 

@@ -1,0 +1,29 @@
+!!! Strict
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %title Rails Skill Test
+    = stylesheet_link_tag "web_app_theme", "web_app_theme_override", "themes/default/style", :cache => true
+    = javascript_include_tag :defaults
+  %body
+    #container
+      #header
+        %h1 <a href="/">Rails Skill Test</a>
+        #user-navigation
+          %ul.wat-cf
+            <li><a href="/" class="logout">Home</a></li>
+        <div id="main-navigation">
+        <ul class="wat-cf"></ul>
+        </div>
+      #wrapper.wat-cf
+        .flash
+          - flash.each do |type, message|
+            .message{:class => type.to_s}
+              <p>#{ message }</p>
+        #main
+          = yield
+          #footer
+            .block
+              <p>Copyright &copy; #{ Time.now.year } Cristian R. Arroyo.</p>
+        #sidebar
+          = yield :sidebar
